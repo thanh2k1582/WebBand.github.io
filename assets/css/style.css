@@ -1,0 +1,504 @@
+/* common */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.text-white{
+    color:#fff !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.col-haft{
+    width:50%;
+}
+.col {
+    padding-left:8px;
+    float:left;
+    padding-right:8px;
+}
+.pt8{
+    margin-top: 8px;
+}
+.pt16{
+    margin-top: 16px;
+}
+.col-third{
+    width: calc(100%/3);
+}
+/* main */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46.6px;
+    background: #000;
+    z-index: 1;
+}
+
+.nav{
+    display:block;
+}
+.nav>li:first-child{
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+    position: relative;
+}
+.nav>li>a{
+    color: #fff;
+}
+.nav li a {
+    text-decoration: none;
+
+    line-height:46.6px;
+    padding: 0 24px;
+    display: block;
+}
+.nav>li:hover >a{
+    color: #000;
+    background: #ccc;
+}
+.subnav>li:hover >a{
+    color: #000;
+    background: #ccc;
+}
+.subnav{
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(43, 43, 43, 0.4);
+}
+.subnav li{
+    /* display: none; */
+    display:block;
+    line-height: 15px;
+    
+}
+.subnav li a{
+    color: #000;
+    display:block;
+}
+.nav li:hover .subnav{
+    display:block;
+}
+.nav .more-down{
+    font-size: 12.5px;
+    margin-left: 2px;
+}
+.header .mobile-menu-bnt{
+    float: right;
+}
+.header .search-bnt{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header .mobile-menu-bnt{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header .menu-header,
+.header .search-icon{
+    color: #fff;
+    line-height:46.6px;
+    padding: 0 24px;
+}
+.header .mobile-menu-bnt:hover{
+        color: #000;
+        background:#ccc;
+        cursor: pointer;
+    
+}
+.header .search-bnt:hover{
+    background:#f44336;
+    cursor: pointer;
+}
+/* Slider */
+.slider{
+    margin-top: 46.6px;
+    padding-top: 50%;
+    background: url('/F8/W3_band/assets/image/slider/onepiece1.jpg') top center / cover no-repeat;
+    position: relative;
+    filter:blur(1px);
+}
+.text-content{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    bottom:0px;
+    right:0;
+    left:0;
+    text-align: center;
+    padding:32px;
+    
+}
+.text-heading{
+    margin: 10px;
+    font-weight: 1000;
+    font-size: 35px;
+    text-shadow: 2px 5px 0 rgba(12, 227, 255, 0.5);
+}
+.text-description{
+    margin: 15px;
+    font-size: 20px;
+    text-shadow: 2px 5px 0 rgba(12, 227, 255, 0.5);
+}
+.content{}
+.content-section{
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-heading{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing:4px;
+    color:rgb(58, 58, 58);
+}
+.section-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: 0.7;
+}
+.about-text{
+    text-align: justify;
+    line-height:1.5;
+}
+.content .girl-list{
+    margin-top: 48px;
+    overflow: hidden;
+}
+.content .girl-item{
+    /* display: inline-block; */
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.girl-name{
+    
+    margin: 15px;
+    font-size: 15px;
+}
+.content .girl-pic{
+    max-width: 154px;
+    border-radius: 4px;
+    filter: blur(2px);
+
+}
+.content .girl-pic:hover{
+    filter: blur(0px);
+}
+/* tour-section */
+.tour-section{
+    background: #000;
+}
+.tickets-list{
+    background: #ffffff;
+
+    list-style: none;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 8px 16px;
+    color:#757575;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    font-size: 15px;
+    padding:2px 8px;
+    background: #f44336;    
+    color: #ffffff;
+    margin-left: 5px;
+}
+.tickets-list .quatity{
+    background: #000;
+    color:#fff;
+    padding: 4px 9px;
+    border-radius: 50%;
+    float:right;
+    margin-top: -4px;
+}
+/* mygirl-lít  */
+.mygirl-list{
+    
+    overflow: hidden;
+    padding: 16px 0px;
+}
+
+.mygirl-pic{
+    width:100%;
+    display:block;
+    filter: blur(2px);
+}
+.mygirl-pic:hover{
+    filter:blur(0px);
+}
+.mygirl-body{
+    background: #fff;
+    padding:16px;
+}
+.mygirl-heading{
+    font-size:15px;
+    font-weight: 550;
+}
+.mygirl-time{
+margin-top:15px;
+margin-bottom: 15px;
+opacity: 0.8;
+}
+.mygirl-des{
+    margin-top:15px;margin-bottom: 15px;
+}
+.mygirl-bnt{
+    text-decoration: none;
+    background:#000;
+    color:#fff;
+    padding:9px 15px;
+}
+.mygirl-bnt:hover{
+    color:rgb(0, 0, 0);
+    background:rgb(126, 126, 126)
+}
+/* modal */
+.modal{
+    position: fixed;
+    background:rgba(78, 78, 78,0.4);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal-container{
+    width: 900px;
+    max-width: calc(100% -32px);
+    background:#fff;
+    position: relative;
+    animation:modal_animation ease 0.5s;
+}
+.modal-heading{
+    background: #04c4b0;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    padding:14px;
+    color:#fff;
+}
+.modal-close:hover{
+    background:#b1b1b1;
+    color:rgb(48, 48, 48);
+}
+.modal-tickets{
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;color:#fff;
+    padding:42px
+}
+.icon-bag{
+    margin-right: 12px;
+}
+.modal-body{
+    padding:0 16px;
+}
+.modal-label{
+    display:block;
+    font-size: 15px;
+    padding:15px 0;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width:100%;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.modal-bnt{
+    display:block;
+    background:#04c4b0;
+    border: none;
+    width:100%;
+    padding:16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.modal-bnt:hover{
+    opacity: 0.8;
+}
+.modal-footer{
+    text-align: right;
+    padding:15px 0px 25px;
+}
+.modal-footer a{
+    color:#2196F3;
+   
+}
+.open{
+    display: flex;
+}
+@keyframes modal_animation{
+    from{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* contact */
+.contact-section{
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-full{
+    width: 100%;
+}
+.contact-form{
+    padding:32px 0px;
+    overflow: hidden;
+}
+.contact-text {
+    font-size:18px;
+    line-height:1.5;
+    
+}
+.contact-text i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.form-contact{
+    font-size: 15px;
+}
+.form-contral{
+    padding:10px;
+    margin:1px;
+    width:100%;
+    border: 1px solid #ccc;
+}
+.btn-submitform{
+    background-color:#000;
+    color:#fff;
+    border: none;
+    padding:8px 16px;
+    float: right;
+}
+.map img{
+    width: 100%;
+}
+/* footer */
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.soicial-list a{
+    font-size: 24px;
+    text-decoration: none;
+    color:rgba(0,0,0,0.6);
+}
+.copyright{
+    margin-top: 15px;
+}
+.soicial-list a:hover,
+.copyright p a:hover{
+    color:rgba(0,0,0,0.4);
+} 
+.copyright p,
+.copyright p a{
+    color:rgba(0,0,0,0.6);
+}
+@media (min-width: 1024px){
+
+}@media (max-width: 1024px) and (min-width: 740px){
+
+}
+@media (max-width:1024px){
+    .soicial-list a{
+        padding:0 16px;
+    }
+    .contact-text {
+        line-height:2;
+    }
+    .form-contral{
+        padding:15px;
+    }
+    .mygirl-bnt{
+        padding:14px;
+        width:100%;
+    }
+}
+@media (max-width: 739px){
+    .s-full-width{
+        width:100%;
+        padding-top: 16px;
+        padding-bottom:16px
+    }
+
+
+    .s-col-full{
+        width:100%;
+    }
+    .nav li {
+        display: block;
+    }
+    .header{
+
+        overflow:hidden;
+    }
+    .search-icon{
+        display: none;
+    }
+    .header .mobile-menu-bnt{
+        display: block;
+    }
+    .subnav{
+        position: initial;
+        background: #333;  
+        padding: 5px 32px;
+        border-bottom: 1px solid #000;
+    }
+    .subnav li a{
+        color: #fff;
+    }
+    .content .girl-item{
+        width:100%;
+    }
+    .content .girl-pic{
+        max-width: 60%;
+    }
+    .girl-item{
+        margin-bottom: 16px;
+    }
+    .form-contral{
+        margin-top: 18px;
+    }
+}
